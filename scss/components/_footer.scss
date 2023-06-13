@@ -1,0 +1,18 @@
+footer {
+    margin-top: auto;
+    .footer-icons{
+        transition: .7s;
+        a {
+            color: black;
+            font-size: 25px;
+
+            &:hover {
+                color: gray;
+            }
+        }
+    }
+
+    p {
+        @include titulos (black, 1.5rem, left, none, 0);
+    }
+}

@@ -1,0 +1,14 @@
+.carousel {
+    img {
+        object-fit: cover;
+        height: 55vh;
+        width: 100%;
+    }
+}
+
+.info-celi {
+    p {
+        margin: 0;
+        @include titulos (black, 2rem, left, none, 0);
+    }
+}

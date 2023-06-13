@@ -1,0 +1,15 @@
+.navbar {
+    background-color: bisque;
+    a {
+        @include titulos (black, 3rem, left, none, 0);
+    }
+    .collapse {
+        ul {
+            li{
+                a{
+                    @include titulos (black, 2rem, left, none, 0);
+                }
+            }
+        }
+    }
+    }

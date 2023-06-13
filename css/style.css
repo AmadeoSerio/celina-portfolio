@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Raleway", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navbar {
+  background-color: bisque;
+}
+.navbar a {
+  color: black;
+  font-size: 3rem;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.navbar .collapse ul li a {
+  color: black;
+  font-size: 2rem;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+footer {
+  margin-top: auto;
+}
+footer .footer-icons {
+  transition: 0.7s;
+}
+footer .footer-icons a {
+  color: black;
+  font-size: 25px;
+}
+footer .footer-icons a:hover {
+  color: gray;
+}
+footer p {
+  color: black;
+  font-size: 1.5rem;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.carousel img {
+  object-fit: cover;
+  height: 55vh;
+  width: 100%;
+}
+
+.info-celi p {
+  margin: 0;
+  color: black;
+  font-size: 2rem;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.fotografias-page h1, .fotografias-page h2, .fotografias-page h3, .fotografias-page h4, .fotografias-page h5, .fotografias-page h6 {
+  padding-top: 3rem;
+  color: black;
+  font-size: 3rem;
+  text-align: left;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.fotografias-page h1 {
+  padding-top: 0;
+}
+.fotografias-page .carousel img {
+  object-fit: cover;
+  height: 85vh;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
