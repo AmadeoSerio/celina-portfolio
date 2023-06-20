@@ -1,15 +1,26 @@
 .navbar {
     background-color: bisque;
-    a {
-        @include titulos (black, 3rem, left, none, 0);
+
+    .brand-celi {
+        @include flexbox (row, center, center);
+
+        a {
+            @include titulos (black, 3rem, left, none, 0);
+        }
+
+        span {
+            font-size: 3rem;
+        }
     }
+
     .collapse {
         ul {
-            li{
-                a{
+            margin-left: 2rem;
+            li {
+                a {
                     @include titulos (black, 2rem, left, none, 0);
                 }
             }
         }
     }
-    }
+}

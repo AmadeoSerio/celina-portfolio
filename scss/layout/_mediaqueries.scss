@@ -1,0 +1,58 @@
+@media only screen and (max-width:991px) {
+
+    .navbar {
+    
+        .brand-celi {
+    
+            a {
+                @include titulos (black, 2rem, left, none, 0);
+            }
+    
+            span {
+                font-size: 2.1rem;
+            }
+        }
+    
+        .collapse {
+            ul {
+                margin-left: 0rem;
+                li {
+                    a {
+                        @include titulos (black, 1.5rem, left, none, 0);
+                        font-weight: bolder;
+                    }
+                }
+            }
+        }
+    }
+
+    .info-celi {
+        p {
+            margin: 0;
+            @include titulos (black, 1.4rem, left, none, 0);
+        }
+    }
+
+    .fotografias-page {
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            padding-top: 2rem;
+            @include titulos (black, 2rem, left, none, 0);
+        }
+
+        h1 {
+            padding-top: 0;
+        }
+
+        .carousel {
+            img {
+                height: 42vh;
+            }
+        }
+    }
+}

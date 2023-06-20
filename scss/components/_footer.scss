@@ -1,8 +1,11 @@
 footer {
     margin-top: auto;
-    .footer-icons{
+
+    .footer-icons {
         transition: .7s;
+
         a {
+            text-decoration: none;
             color: black;
             font-size: 25px;
 
