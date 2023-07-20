@@ -68,12 +68,58 @@ footer p {
   letter-spacing: 0;
 }
 
+.carousel {
+  border-radius: 3%;
+}
 .carousel img {
   object-fit: cover;
-  height: 55vh;
+  height: 70vh;
   width: 100%;
+  border-radius: 3%;
+}
+.carousel .carousel-control-prev-icon, .carousel .carousel-control-next-icon {
+  height: 5vh;
+  width: 5vh;
 }
 
+.info-celi {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: space-between;
+}
+.info-celi .imagen-index img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border-radius: 3%;
+}
+.info-celi .info-index {
+  padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.info-celi .info-index .block1 {
+  border-radius: 3%;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  background-color: rgb(196, 241, 255);
+}
+.info-celi .info-index .block2 {
+  border-radius: 3%;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  background-color: rgba(169, 46, 240, 0.884);
+}
+.info-celi .info-index .block3 {
+  border-radius: 3%;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  background-color: rgba(211, 240, 46, 0.884);
+}
 .info-celi p {
   margin: 0;
   color: black;
@@ -88,6 +134,7 @@ footer p {
 .fotografias-page h3,
 .fotografias-page h4,
 .fotografias-page h5,
+.fotografias-page h6,
 .fotografias-page h6 {
   padding-top: 3rem;
   color: black;
@@ -99,12 +146,32 @@ footer p {
 .fotografias-page h1 {
   padding-top: 0;
 }
+.fotografias-page .carousel {
+  border-radius: 3%;
+}
+.fotografias-page .carousel .carousel-inner {
+  border-radius: 3%;
+}
 .fotografias-page .carousel img {
   object-fit: cover;
   height: 85vh;
   width: 100%;
+  border-radius: 3%;
 }
 
+@media only screen and (max-width: 1200px) {
+  .info-celi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
+  }
+  .info-celi .imagen-index img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+  }
+}
 @media only screen and (max-width: 991px) {
   .navbar .brand-celi a {
     color: black;
@@ -126,6 +193,12 @@ footer p {
     text-transform: none;
     letter-spacing: 0;
     font-weight: bolder;
+  }
+  .info-celi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-between;
   }
   .info-celi p {
     margin: 0;

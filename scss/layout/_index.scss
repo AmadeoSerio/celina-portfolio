@@ -1,12 +1,51 @@
 .carousel {
+    border-radius: 3%;
     img {
         object-fit: cover;
-        height: 55vh;
+        height: 70vh;
         width: 100%;
+        border-radius: 3%;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon {
+        height: 5vh;
+        width: 5vh;
     }
 }
 
 .info-celi {
+    @include flexbox (row, center, space-between);
+
+    .imagen-index {
+        img {@include imagenes (100%, 50vh, cover);
+        margin-bottom: 1rem;
+        border-radius: 3%;
+    }
+    }
+
+    .info-index{
+        padding-right: 1rem;
+@include flexbox (column, space-around, center);
+    .block1{
+        border-radius: 3%;
+        padding: 2rem;
+        margin-bottom: 1rem;
+        background-color: rgb(196, 241, 255);
+    }
+    .block2{
+        border-radius: 3%;
+        padding: 2rem;
+        margin-bottom: 1rem;
+        background-color: rgba(169, 46, 240, 0.884);
+    }
+    .block3{
+        border-radius: 3%;
+        padding: 2rem;
+        margin-bottom: 1rem;
+        background-color: rgba(211, 240, 46, 0.884);
+    }
+}
+
     p {
         margin: 0;
         @include titulos (black, 2rem, left, none, 0);

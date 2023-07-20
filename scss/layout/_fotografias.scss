@@ -5,6 +5,7 @@
     h3,
     h4,
     h5,
+    h6,
     h6 {
         padding-top: 3rem;
         @include titulos (black, 3rem, left, none, 0);
@@ -15,10 +16,17 @@
     }
 
     .carousel {
+        border-radius: 3%;
+
+        .carousel-inner {
+            border-radius: 3%;
+        }
+
         img {
             object-fit: cover;
             height: 85vh;
             width: 100%;
+            border-radius: 3%;
         }
     }
 }
