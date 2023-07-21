@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
 }
 
 html {
@@ -15,5 +16,6 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: $main-font;
+  background-color: #F1F8FD;
 }
 

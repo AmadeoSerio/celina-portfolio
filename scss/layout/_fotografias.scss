@@ -12,11 +12,16 @@
     }
 
     h1 {
-        padding-top: 0;
+        padding-top: 6rem;
     }
 
     .carousel {
         border-radius: 3%;
+        
+        .carousel-control-prev-icon, .carousel-control-next-icon {
+            height: 8vh;
+            width: 8vh;
+        }
 
         .carousel-inner {
             border-radius: 3%;

@@ -1,12 +1,15 @@
-.carousel {
+.carousel-index {
     border-radius: 3%;
+    padding-top: 6rem;
     img {
         object-fit: cover;
-        height: 70vh;
+        height: 90vh;
         width: 100%;
         border-radius: 3%;
     }
-
+    .carousel-inner {
+        border-radius: 3%;
+    }
     .carousel-control-prev-icon, .carousel-control-next-icon {
         height: 5vh;
         width: 5vh;
@@ -17,9 +20,11 @@
     @include flexbox (row, center, space-between);
 
     .imagen-index {
-        img {@include imagenes (100%, 50vh, cover);
+        img {@include imagenes (100%, 50rem, cover);
         margin-bottom: 1rem;
         border-radius: 3%;
+        border: 2px solid black;
+        box-shadow: -11px 11px 12px rgba(39, 39, 39, 0.418);
     }
     }
 
@@ -27,22 +32,34 @@
         padding-right: 1rem;
 @include flexbox (column, space-around, center);
     .block1{
-        border-radius: 3%;
-        padding: 2rem;
+        padding: 1.5rem;
+        margin-right: 1rem;
         margin-bottom: 1rem;
-        background-color: rgb(196, 241, 255);
+        border-radius: 10px;
+        box-shadow: -11px 11px 12px rgba(39, 39, 39, 0.418);
+        background: $gradiente;
+        p {color: #F1F8FD;}
+        b {color: #F6C667};
     }
     .block2{
-        border-radius: 3%;
-        padding: 2rem;
+        padding: 1.5rem;
+        margin-right: 1rem;
         margin-bottom: 1rem;
-        background-color: rgba(169, 46, 240, 0.884);
+        border-radius: 10px;
+        box-shadow: -11px 11px 12px rgba(39, 39, 39, 0.418);
+        background: $gradiente;
+        p {color: #F1F8FD;}
+        b {color: #F6C667};
     }
     .block3{
-        border-radius: 3%;
-        padding: 2rem;
+        padding: 1.5rem;
+        margin-right: 1rem;
         margin-bottom: 1rem;
-        background-color: rgba(211, 240, 46, 0.884);
+        border-radius: 10px;
+        box-shadow: -11px 11px 12px rgba(39, 39, 39, 0.418);
+        background: $gradiente;
+        p {color: #F1F8FD;}
+        b {color: #F6C667};
     }
 }
 

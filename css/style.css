@@ -14,10 +14,12 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: "Raleway", sans-serif;
+  background-color: #F1F8FD;
 }
 
 .navbar {
-  background-color: bisque;
+  background-color: #F6C667;
+  box-shadow: 0px 5px 17px rgba(121, 121, 121, 0.418);
 }
 .navbar .brand-celi {
   display: flex;
@@ -68,16 +70,20 @@ footer p {
   letter-spacing: 0;
 }
 
-.carousel {
+.carousel-index {
   border-radius: 3%;
+  padding-top: 6rem;
 }
-.carousel img {
+.carousel-index img {
   object-fit: cover;
-  height: 70vh;
+  height: 90vh;
   width: 100%;
   border-radius: 3%;
 }
-.carousel .carousel-control-prev-icon, .carousel .carousel-control-next-icon {
+.carousel-index .carousel-inner {
+  border-radius: 3%;
+}
+.carousel-index .carousel-control-prev-icon, .carousel-index .carousel-control-next-icon {
   height: 5vh;
   width: 5vh;
 }
@@ -90,10 +96,12 @@ footer p {
 }
 .info-celi .imagen-index img {
   width: 100%;
-  height: 50vh;
+  height: 50rem;
   object-fit: cover;
   margin-bottom: 1rem;
   border-radius: 3%;
+  border: 2px solid black;
+  box-shadow: -11px 11px 12px rgba(39, 39, 39, 0.418);
 }
 .info-celi .info-index {
   padding-right: 1rem;
@@ -103,22 +111,46 @@ footer p {
   align-items: center;
 }
 .info-celi .info-index .block1 {
-  border-radius: 3%;
-  padding: 2rem;
+  padding: 1.5rem;
+  margin-right: 1rem;
   margin-bottom: 1rem;
-  background-color: rgb(196, 241, 255);
+  border-radius: 10px;
+  box-shadow: -11px 11px 12px rgba(39, 39, 39, 0.418);
+  background: linear-gradient(to right, rgba(144, 12, 38, 0.7725490196), rgba(214, 0, 46, 0.8078431373));
+}
+.info-celi .info-index .block1 p {
+  color: #F1F8FD;
+}
+.info-celi .info-index .block1 b {
+  color: #F6C667;
 }
 .info-celi .info-index .block2 {
-  border-radius: 3%;
-  padding: 2rem;
+  padding: 1.5rem;
+  margin-right: 1rem;
   margin-bottom: 1rem;
-  background-color: rgba(169, 46, 240, 0.884);
+  border-radius: 10px;
+  box-shadow: -11px 11px 12px rgba(39, 39, 39, 0.418);
+  background: linear-gradient(to right, rgba(144, 12, 38, 0.7725490196), rgba(214, 0, 46, 0.8078431373));
+}
+.info-celi .info-index .block2 p {
+  color: #F1F8FD;
+}
+.info-celi .info-index .block2 b {
+  color: #F6C667;
 }
 .info-celi .info-index .block3 {
-  border-radius: 3%;
-  padding: 2rem;
+  padding: 1.5rem;
+  margin-right: 1rem;
   margin-bottom: 1rem;
-  background-color: rgba(211, 240, 46, 0.884);
+  border-radius: 10px;
+  box-shadow: -11px 11px 12px rgba(39, 39, 39, 0.418);
+  background: linear-gradient(to right, rgba(144, 12, 38, 0.7725490196), rgba(214, 0, 46, 0.8078431373));
+}
+.info-celi .info-index .block3 p {
+  color: #F1F8FD;
+}
+.info-celi .info-index .block3 b {
+  color: #F6C667;
 }
 .info-celi p {
   margin: 0;
@@ -127,6 +159,10 @@ footer p {
   text-align: left;
   text-transform: none;
   letter-spacing: 0;
+}
+
+.formulario {
+  padding-top: 6rem;
 }
 
 .fotografias-page h1,
@@ -144,10 +180,14 @@ footer p {
   letter-spacing: 0;
 }
 .fotografias-page h1 {
-  padding-top: 0;
+  padding-top: 6rem;
 }
 .fotografias-page .carousel {
   border-radius: 3%;
+}
+.fotografias-page .carousel .carousel-control-prev-icon, .fotografias-page .carousel .carousel-control-next-icon {
+  height: 8vh;
+  width: 8vh;
 }
 .fotografias-page .carousel .carousel-inner {
   border-radius: 3%;
@@ -226,6 +266,9 @@ footer p {
   }
   .fotografias-page .carousel img {
     height: 42vh;
+  }
+  .carousel-index .carousel-inner .carousel-item img {
+    height: 60vh;
   }
 }
 
