@@ -1,6 +1,7 @@
 @media only screen and (max-width:1200px) {
     .info-celi {
         @include flexbox (column, center, space-between);
+
         .imagen-index {
             img {
                 @include imagenes (100%, 40vh, cover);
@@ -63,18 +64,18 @@
         }
 
         h1 {
-            padding-top: 0;
+            padding-top: 4rem;
         }
 
-        .carousel{
+        .carousel {
             img {
                 height: 42vh;
             }
         }
     }
 
-    .carousel-index{
-        .carousel-inner{
+    .carousel-index {
+        .carousel-inner {
             .carousel-item {
                 img {
                     height: 60vh;
@@ -83,4 +84,3 @@
         }
     }
 }
-
