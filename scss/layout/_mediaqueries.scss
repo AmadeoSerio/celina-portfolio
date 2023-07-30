@@ -68,6 +68,10 @@
         }
 
         .carousel {
+            .carousel-control-prev-icon, .carousel-control-next-icon {
+                height: 8vh;
+                width: 8vh;}
+                margin-top: 8rem;
             img {
                 height: 42vh;
             }
@@ -84,3 +88,4 @@
         }
     }
 }
+

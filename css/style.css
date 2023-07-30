@@ -264,6 +264,13 @@ footer p {
   .fotografias-page h1 {
     padding-top: 4rem;
   }
+  .fotografias-page .carousel {
+    margin-top: 8rem;
+  }
+  .fotografias-page .carousel .carousel-control-prev-icon, .fotografias-page .carousel .carousel-control-next-icon {
+    height: 8vh;
+    width: 8vh;
+  }
   .fotografias-page .carousel img {
     height: 42vh;
   }
