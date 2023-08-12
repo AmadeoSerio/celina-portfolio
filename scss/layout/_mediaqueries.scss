@@ -46,6 +46,18 @@
             margin: 0;
             @include titulos (black, 1.4rem, left, none, 0);
         }
+
+        .imagen-index {
+            margin-top: 1%;
+            margin-bottom: 0rem;
+        }
+
+        .info-index{
+            padding-right: 0;
+            .block1, .block2, .block3 {
+                margin-right: 0;
+            }
+        }
     }
 
 

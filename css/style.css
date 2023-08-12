@@ -248,6 +248,16 @@ footer p {
     text-transform: none;
     letter-spacing: 0;
   }
+  .info-celi .imagen-index {
+    margin-top: 1%;
+    margin-bottom: 0rem;
+  }
+  .info-celi .info-index {
+    padding-right: 0;
+  }
+  .info-celi .info-index .block1, .info-celi .info-index .block2, .info-celi .info-index .block3 {
+    margin-right: 0;
+  }
   .fotografias-page h1,
   .fotografias-page h2,
   .fotografias-page h3,
