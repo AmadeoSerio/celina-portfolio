@@ -27,10 +27,10 @@ class Fotografia {
   
     if (servicio) {
       let mensaje = `
-      El servicio seleccionado tiene las siguientes características.
-        Categoría: ${servicio.nombre.toUpperCase()} 
-        Precio: ${servicio.precio}
-        Duración: ${servicio.duracion}
+El servicio seleccionado tiene las siguientes características.
+Categoría: ${servicio.nombre.toUpperCase()} 
+Precio: ${servicio.precio}
+Duración: ${servicio.duracion}
       `;
   
       alert(mensaje);
