@@ -7,6 +7,11 @@
 
         a {
             @include titulos (black, 3rem, left, none, 0);
+            transition: .3s;
+
+            &:hover {
+                color: white;
+            }
         }
 
         span {
@@ -17,9 +22,16 @@
     .collapse {
         ul {
             margin-left: 2rem;
+
             li {
                 a {
                     @include titulos (black, 2rem, left, none, 0);
+                    transition: .3s;
+
+
+                    &:hover {
+                        color: white;
+                    }
                 }
             }
         }

@@ -14,7 +14,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: "Raleway", sans-serif;
-  background-color: #F1F8FD;
+  background-color: #fafafa;
 }
 
 .navbar {
@@ -33,6 +33,10 @@ body {
   text-align: left;
   text-transform: none;
   letter-spacing: 0;
+  transition: 0.3s;
+}
+.navbar .brand-celi a:hover {
+  color: white;
 }
 .navbar .brand-celi span {
   font-size: 3rem;
@@ -46,6 +50,10 @@ body {
   text-align: left;
   text-transform: none;
   letter-spacing: 0;
+  transition: 0.3s;
+}
+.navbar .collapse ul li a:hover {
+  color: white;
 }
 
 footer {
@@ -57,10 +65,12 @@ footer .footer-icons {
 footer .footer-icons a {
   text-decoration: none;
   color: black;
-  font-size: 25px;
+  font-size: 4rem;
+  transition: 0.8s;
 }
 footer .footer-icons a:hover {
-  color: gray;
+  color: #187a4c;
+  transform: scale(1.1);
 }
 footer p {
   color: black;
@@ -72,11 +82,11 @@ footer p {
 
 .carousel-index {
   border-radius: 3%;
-  padding-top: 6rem;
+  padding-top: 15rem;
 }
 .carousel-index img {
   object-fit: cover;
-  height: 90vh;
+  height: 87vh;
   width: 100%;
   border-radius: 3%;
 }
@@ -161,8 +171,173 @@ footer p {
   letter-spacing: 0;
 }
 
+.contacto-titulo {
+  margin-top: 10rem;
+  text-align: center;
+  font-size: 3rem;
+}
+.contacto-titulo b {
+  color: rgba(214, 0, 46, 0.8078431373);
+}
+
 .formulario {
-  padding-top: 6rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+.formulario .contacto {
+  margin-top: -1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(238, 238, 238, 0.9333333333);
+  border-radius: 2rem;
+  width: 38rem;
+  padding-bottom: 3rem;
+}
+.formulario .contacto input:-webkit-autofill {
+  -webkit-text-fill-color: black;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.formulario .contacto h2 {
+  color: rgb(255, 255, 255);
+  font-size: 4rem;
+  text-align: center;
+  text-transform: none;
+  letter-spacing: 0rem;
+}
+.formulario .contacto .formName {
+  color: black;
+  font-size: 2rem;
+  margin-left: -22rem;
+  margin-top: 1rem;
+}
+.formulario .contacto .formNameLabel {
+  width: 30rem;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  border: solid #F6C667;
+}
+.formulario .contacto .formNameLabel:focus-visible {
+  border: 0.2rem solid rgba(255, 217, 0, 0);
+}
+.formulario .contacto .formMail {
+  color: black;
+  font-size: 2rem;
+  margin-left: -13rem;
+  margin-top: 1rem;
+}
+.formulario .contacto .formMailLabel {
+  width: 30rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  border: solid #F6C667;
+}
+.formulario .contacto .formMailLabel:focus-visible {
+  border: 0.2rem solid rgba(255, 217, 0, 0);
+}
+.formulario .contacto .formSubject {
+  color: black;
+  font-size: 2rem;
+  margin-left: -22rem;
+  margin-top: 1rem;
+}
+.formulario .contacto .formSubjectLabel {
+  width: 30rem;
+  font-weight: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  border: solid #F6C667;
+}
+.formulario .contacto .formSubjectLabel:focus-visible {
+  border: 0.2rem solid rgba(255, 217, 0, 0);
+}
+.formulario .contacto .formText {
+  color: black;
+  font-size: 2rem;
+  margin-left: -18rem;
+  margin-top: 1rem;
+}
+.formulario .contacto .formTextLabel {
+  width: 30rem;
+  font-weight: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  border: solid #F6C667;
+}
+.formulario .contacto .formTextLabel:focus-visible {
+  border: 0.2rem solid rgba(255, 217, 0, 0);
+}
+.formulario .contacto .formEnviar {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: #F6C667;
+  transition: 0.6s;
+  margin-left: -21.8rem;
+  margin-top: 1rem;
+}
+.formulario .contacto .formEnviar:hover {
+  background-color: #fad78b;
+}
+
+.footer-formulario {
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 3rem;
+}
+.footer-formulario b {
+  color: rgba(214, 0, 46, 0.8078431373);
+}
+
+.redes-contacto {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}
+.redes-contacto div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+.redes-contacto div a {
+  font-size: 5rem;
+  color: black;
+  text-decoration: none;
+  transition: 0.4s;
+}
+.redes-contacto div a:hover {
+  color: rgba(214, 0, 46, 0.8078431373);
+  transform: scale(1.1);
+}
+.redes-contacto div p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
 }
 
 .fotografias-page h1,
@@ -284,8 +459,52 @@ footer p {
   .fotografias-page .carousel img {
     height: 42vh;
   }
+  .carousel-index {
+    padding-top: 6rem;
+  }
   .carousel-index .carousel-inner .carousel-item img {
     height: 60vh;
+  }
+  .contacto-titulo {
+    margin-top: 7rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .contacto-titulo b {
+    color: rgba(214, 0, 46, 0.8078431373);
+  }
+  .footer-formulario {
+    margin-top: 2.5rem;
+    text-align: center;
+    font-size: 2rem;
+  }
+  .footer-formulario b {
+    color: rgba(214, 0, 46, 0.8078431373);
+  }
+  .redes-contacto {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+  .redes-contacto div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .redes-contacto div a {
+    font-size: 2.5rem;
+    color: black;
+    text-decoration: none;
+    transition: 0.4s;
+  }
+  .redes-contacto div a:hover {
+    color: rgba(214, 0, 46, 0.8078431373);
+    transform: scale(1.1);
+  }
+  .redes-contacto div p {
+    font-size: 1.5rem;
+    margin-top: 1rem;
   }
 }
 

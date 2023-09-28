@@ -67,21 +67,43 @@
 
 
     <main>
+<h3 class="container contacto-titulo"> Para <b>contrataciones</b> o consultas completá el formulario</h3>
 
         <section class="container mt-4 formulario">
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
+            <form id="form" class="container contacto" action="https://formspree.io/f/mgejzzar" method="POST">
+                <label class="formName" for="name">Nombre</label>
+                <input class="formNameLabel" required type="text" name="name" id="name">
+        
+                <label class="formSubject" for="number">Teléfono</label>
+                <input class="formSubjectLabel" required type="tel" name="number" id="number">
+        
+                <label class="formMail" for="email">Correo electrónico</label>
+                <input class="formMailLabel" required type="text" name="email" id="email">
+                
+                <label class="formText" for="comments">Comentarios</label>
+                <textarea placeholder="Escribe aquí..." class="formTextLabel" required name="message" id="message" cols="15" rows="5"></textarea>
+        
+                <input id="enviarMail" class="formEnviar" type="submit" value="Enviar">
+            </form>
         </section>
     </main>
 
+    <h4 class="container footer-formulario"> Si te gusta mi contenido podés <b>seguirme</b></h4>
 
+    
+    <div class="container redes-contacto"> 
+        <div>
+        <a class="fa-brands fa-instagram" href="https://www.instagram.com/vakita.producciones/"
+        target="_blank"></a> 
+        <p>Vakita Producciones</p>
+    </div>
 
+    <div>
+        <a class="fa-brands fa-instagram" href="https://www.instagram.com/teveotanlocaoficial/"
+        target="_blank"></a>
+        <p>Te Veo Tan Loca</p>
+    </div>
+    </div>
 
     <footer class="d-flex flex-wrap align-items-center py-2 border-top">
         <div class="d-flex justify-content-between align-items-center container mb-1">
@@ -90,7 +112,6 @@
                 <a class="fa-brands fa-whatsapp"
                     href="https://api.whatsapp.com/send/?phone=5492615367693&text&type=phone_number&app_absent=0"
                     target="_blank"></a>
-                <a class="fa-solid fa-envelope"></a>
             </span>
         </div>
     </footer>
@@ -103,6 +124,8 @@
     <script src="https://kit.fontawesome.com/7502029dfc.js" crossorigin="anonymous"></script>
 
     <script src="../main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

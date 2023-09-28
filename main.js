@@ -1,42 +1,33 @@
-class Fotografia {
-    constructor(nombre, precio, duracion) {
-      this.nombre = nombre;
-      this.precio = precio;
-      this.duracion = duracion;
-      this.ocupado = false;
-    }
-  
-    fechaOcupada() {
-      this.ocupado = true;
-    }
-  }
-  
-  const eventos = [];
-  
-  eventos.push(new Fotografia("casamiento", 20000, "6hs"));
-  eventos.push(new Fotografia("cumpleaño", 20000, "6hs"));
-  eventos.push(new Fotografia("producto", 10000, "2hs"));
-  eventos.push(new Fotografia("recital", 18000, "4hs"));
-  eventos.push(new Fotografia("emprendimiento", 12000, "2hs"));
-  eventos.push(new Fotografia("video", 18000, "3hs"));
-  
-  let nombre = prompt("Ingrese el tipo de servicio de fotografía que quiere relizar (CASAMIENTO, CUMPLEAÑO, PRODUCTO, RECITAL, EMPRENDIMIENTO o VIDEO). En caso de que quieras cerrar la ventana escriba: 'esc'").toLowerCase();
+const enviarMail3 = document.getElementById("enviarMail");
+const $form = document.querySelector("#form")
 
-  while (nombre != "esc") {
-    const servicio = eventos.find((item) => item.nombre === nombre);    
-  
-    if (servicio) {
-      let mensaje = `
-El servicio seleccionado tiene las siguientes características.
-Categoría: ${servicio.nombre.toUpperCase()} 
-Precio: ${servicio.precio}
-Duración: ${servicio.duracion}
-      `;
-  
-      alert(mensaje);
-    } else {
-      alert("El servicio ingresado es incorrecto");
+enviarMail3.addEventListener("click", () => {
+    $form.addEventListener("submit", handleSubmit)
+    async function handleSubmit(event) {
+        event.preventDefault()
+        const form = new FormData($form)
+        const response = await fetch($form.action, {
+            method: $form.method,
+            body: form,
+            headers: {
+                "Accept": "application/json"
+            }
+        })
+        //mensaje que sale cuando se presiona enviar
+        if (response.ok) {
+            $form.reset();
+            Swal.fire({
+                customClass: {
+                    popup: 'popup-class'
+                },
+                title: 'Gracias por escribirme. Pronto me pondré en contacto',
+                showCancelButton: false,
+                confirmButtonColor: '#3085d6',
+                confirmButtonText: 'Ok',
+                background: "#F6C667",
+                color: "black",
+                confirmButtonColor: "#05121b",
+            })
+        }
     }
- 
-    nombre = prompt("Ingrese el tipo de servicio de fotografía que quiere relizar (CASAMIENTO, CUMPLEAÑO, PRODUCTO, RECITAL, EMPRENDIMIENTO o VIDEO). En caso de que quieras cerrar la ventana escriba: 'esc'").toLowerCase();
-  }
+});
